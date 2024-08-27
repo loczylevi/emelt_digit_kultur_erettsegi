@@ -144,7 +144,7 @@ rosz_betuk = []
 
 import random
 
-szavak = ["carpe diem", "cuius regio eius religio", "divide et impera", "status quo", "in medias res", "deus ex machine", "Ave Caesar, morituri te salutant", "Cogito, ergo sum", "Dum spiro, spero", "Nomen est omen","Panem et circenses"]
+szavak = ["carpe diem", "cuius regio eius religio", "divide et impera", "status quo", "in medias res", "deus ex machine", "ave caesar, morituri te salutant", "cogito, ergo sum", "dum spiro, spero", "nomen est omen","panem et circenses"]
 
 szavacska = random.choice(szavak)
 
@@ -174,7 +174,8 @@ while True:
                 lista.pop(hol_toroljek)
             else:
                 break
-        jo_betuk.append(bekeres*db)
+        finomitas = bekeres + ", "
+        jo_betuk.append(finomitas*db)
 
 
     else:
@@ -182,7 +183,7 @@ while True:
         if bekeres.lower() in rosz_betuk:
             pass
         else:
-            rosz_betuk = rosz_betuk + bekeres.lower() + ", "
+            rosz_betuk.append(bekeres)
         
     print(f"Jó tippek/betük: {jo_betuk}\nRossz tippek/betük: {rosz_betuk}")
     print(lista)
