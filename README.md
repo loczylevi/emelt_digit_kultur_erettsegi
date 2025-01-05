@@ -6,3 +6,6 @@
 https://emelt.sulipy.hu/
 
 https://sulipy.hu/
+
+## ami eddig kész :white_check_mark: 
+
